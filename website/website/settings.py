@@ -168,7 +168,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'main/static'),
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'main/static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'main/static')
 
 #STATIC_URL = '/static/'
 STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)

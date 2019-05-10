@@ -1,0 +1,34 @@
+<!doctype html>
+{% extends 'header.html' %}
+
+{% block content %}
+<html lang="en">
+  <body>
+    <div class="container">
+        {% load static %}
+        <br>
+        <h1 class="about me">
+            About Me
+        </h1>
+        <img src="{% static 'images/jay.jpg' %}" style="width:300px;height:300px;position:relative;left:3%;float:left;">
+        <h1 class="first">
+            Hello, world!
+        </h1>
+        <h3 class="second">
+            Welcome to my portfolio website! I am a Computer Science undergraduate on my second year in California
+            State University, East Bay.
+        </h3>
+        <h3 class="second">
+            Programming has become such an exceptional part of my life.
+            I have a keen interest in Machine Learning and plan to pursue it as a career in the future.
+        </h3>
+        <h3 class="second">
+            Although I have only been programming for two years, I am excited to learn more to see what challenges I will face.
+        </h3>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
+
+{% endblock %}

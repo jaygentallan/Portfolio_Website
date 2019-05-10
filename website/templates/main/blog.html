@@ -1,0 +1,24 @@
+<!doctype html>
+{% extends 'header.html' %}
+
+{% block content %}
+<html lang="en">
+  <head>
+  </head>
+  <body>
+    <div class="container" style="color:white;">
+        <br><br>
+        {% for tut in tutorials %}
+        <p> {{tut.tutorial_published}} </p>
+        <p> {{tut.tutorial_title}} </p>
+        <p> {{tut.tutorial_content|safe}} </p>
+
+        <br><br>
+        {% endfor %}
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
+
+{% endblock %}

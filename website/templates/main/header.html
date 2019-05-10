@@ -1,0 +1,214 @@
+{% extends 'footer.html' %}
+
+{% block title %}
+    <head>
+        {% load static %}
+          <link href="{% static 'tinymce/css/prism.css' %}" rel='stylesheet'>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+
+        <title> Jay's Portfolio </title>
+          <style>
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .about.me {
+                width:5em;
+                font-size:2em;
+                color:white;
+                font-family: 'Rubik', sans-serif;
+                border-top: 3px solid white;
+                border-bottom: 3px solid white;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                transform: translateY(50%);
+                transform: translateX(65%);
+            }
+
+            .first {
+                font-size:3.5em;
+                color:white;
+                font-family: 'Rubik', sans-serif;
+                transform: translateY(50%);
+            }
+
+            .second {
+                width:700px;
+                height:50px;
+                position:relative;
+                color:white;
+                font-family: 'Rubik', sans-serif;
+                font-size: 1.25em;
+                float:left;
+                left: 7%;
+                transform: translateY(100%);
+                text-align:justify;
+
+            }
+
+            .skills {
+                position:relative;
+                width:5em;
+                font-size:2em;
+                color:white;
+                font-family: 'Rubik', sans-serif;
+                border-top: 3px solid white;
+                border-bottom: 3px solid white;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                transform: translateY(100%);
+                transform: translateX(65%);
+            }
+
+            body {
+                color: white;
+                background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/12/geometry-abstract-cyberspace-4k_1546278204.jpg');
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                font-family: 'Rubik', sans-serif;
+            }
+            #header.container-fluid {
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                background: transparent;
+                font-family: 'Rubik', sans-serif;
+                background: rgba(150, 0, 100, 0.25);
+            }
+
+             #header.container-fluid.active {
+                background: rgba(150, 0, 100, 0.75);
+                font-family: 'Rubik', sans-serif;
+            }
+
+            .container {
+                background-attachment: fixed;
+                background-position: center;
+                background: rgba(200, 0, 100, 0.4);
+                font-family: 'Rubik', sans-serif;
+                text-align: center;
+            }
+
+            .btn.btn-outline-light {
+                border: none;
+                padding: 11px 85px;
+                font-size: 0.5em;
+                font-family: 'Rubik', sans-serif;
+            }
+
+            #name {
+                border: none;
+                height: 100px;
+                width: 750px;
+                position: relative;
+                top: -20px;
+                padding: 0px 0px;
+                font-size: 70px;
+                font-family: 'Rubik', sans-serif;
+            }
+
+            .btn:hover {
+                background: rgba(200, 0, 100, 0.4);
+                color: white;
+            }
+
+            #name:hover {
+                background: rgba(200, 0, 100, 0);
+                color: white;
+            }
+
+          </style>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script>
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 140) {
+                    $("#header.container-fluid").addClass("active");
+                } else {
+                    //remove the background property so it comes transparent again (defined in your css)
+                   $("#header.container-fluid").removeClass("active");
+                }
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <div class="mx-auto" style="position:relative;text-align:top;width: 800px;margin:0 auto;">
+            <h1 class="display-1" style="position:relative;top:-9px;">
+                <a href="../">
+                    <button type="button" id="name" class="btn btn-outline-light">
+                                    Jay Gentallan
+                        <h5 style="position:relative;top:-10px;margin:0 auto;"> A Computer Science Portfolio </h5>
+                    </button>
+                </a>
+            </h1>
+        </div>
+
+        <div class="container-fluid" id="header" style="position:sticky;top:-10px;margin:0;z-index:1;">
+            <div class="row">
+                <div class="col">
+                    <div class="mx-auto" style="width: 200px;">
+                        <h1 class="display-4">
+                            <a href= "../about/">
+                                <button type="button" class="btn btn-outline-light" style="text-align:center;width:275px;">
+                                    About
+                                </button>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mx-auto" style="width: 250px;">
+                        <h1 class="display-4">
+                            <a href= "../projects/">
+                                <button type="button" class="btn btn-outline-light" style="text-align:center;width:275px;">
+                                    Projects
+                                </button>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mx-auto" style="width: 300px;">
+                        <h1 class="display-4">
+                            <a href= "../blog/">
+                                <button type="button" class="btn btn-outline-light" style="text-align:center;width:275px;">
+                                    Blog
+                                </button>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mx-auto" style="width: 375px;">
+                        <h1 class="display-4">
+                            <a href= "../resume/">
+                                <button type="button" class="btn btn-outline-light" style="text-align:center;width:275px;">
+                                    Resume
+                                </button>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="{% static 'tinymce/js/prism.js' %}"></script>
+
+    {% block content %}
+    {% endblock %}
+
+{% endblock %}

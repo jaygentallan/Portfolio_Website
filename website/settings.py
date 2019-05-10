@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'n%pi6fdh$i-^r6l7a&1v)1)9m#p1tfd1guk(ect(y*a*nqua_j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['portfolio.vaw2ttqpjb.us-west-1.elasticbeanstalk.com',
-                 'jaygentallan.com','127.0.0.1']
+                 'jaygentallan.com','www.jaygentallan.com','127.0.0.1']
 
 #'portfolio.qgb83jpb6k.us-west-1.elasticbeanstalk.com','jaygentallan.us-east-1.elasticbeanstalk.com'
 

@@ -84,9 +84,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'main/media')
-MEDIA_URL = '/media/'
-
 ROOT_URLCONF = 'website.urls'
 
 TEMPLATES = [
@@ -165,11 +162,14 @@ AWS_S3_OBJECT_PARAMETERS = {
 AWS_LOCATION = 'main/static'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'main/static'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
 
-#STATIC_ROOT = os.path.join(BASE_DIR, 'main/static')
-
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media_cdn")
+
 #STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 #STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

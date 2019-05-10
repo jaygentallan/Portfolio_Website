@@ -1,13 +1,13 @@
 from django.contrib import admin
-from .models import Tutorial
+from .models import Blog
 from tinymce.widgets import TinyMCE
 from django.db import models
 
 
-class TutorialAdmin(admin.ModelAdmin):
+class BlogAdmin(admin.ModelAdmin):
     fieldsets = [
-        ("Title\date", {"fields": ["tutorial_published", "tutorial_title"]}),
-        ("Content", {"fields": ["tutorial_content"]})
+        ("Title\date", {"fields": ["blog_published", "blog_title"]}),
+        ("Content", {"fields": ["blog_content"]})
     ]
 
     formfield_overrides = {
@@ -15,5 +15,5 @@ class TutorialAdmin(admin.ModelAdmin):
     }
 
 
-admin.site.register(Tutorial, TutorialAdmin)
+admin.site.register(Blog, BlogAdmin)
 

@@ -5,25 +5,25 @@ from .models import Tutorial
 
 def homepage(request):
     return render(request=request,
-                  template_name='main/home.html')
+                  template_name='home.html')
 
 
 def about(request):
     return render(request=request,
-                  template_name='main/about.html')
+                  template_name='about.html')
 
 
 def projects(request):
     return render(request=request,
-                  template_name='main/projects.html')
+                  template_name='projects.html')
 
 
 def blog(request):
     return render(request=request,
-                  template_name='main/blog.html',
+                  template_name='blog.html',
                   context={'tutorials': Tutorial.objects.all})
 
 
 def resume(request):
     return render(request=request,
-                  template_name='main/resume.html')
+                  template_name='resume.html')

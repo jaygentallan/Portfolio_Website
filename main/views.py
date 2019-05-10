@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Tutorial
+from .models import Blog
 
 
 def homepage(request):
@@ -21,7 +21,7 @@ def projects(request):
 def blog(request):
     return render(request=request,
                   template_name='blog.html',
-                  context={'tutorials': Tutorial.objects.all})
+                  context={'blogs': Blog.objects.all})
 
 
 def resume(request):

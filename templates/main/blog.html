@@ -8,10 +8,10 @@
   <body>
     <div class="container" style="color:white;">
         <br><br>
-        {% for tut in tutorials %}
-        <p> {{tut.tutorial_published}} </p>
-        <p> {{tut.tutorial_title}} </p>
-        <p> {{tut.tutorial_content|safe}} </p>
+        {% for blog in blogs %}
+        <p> {{blog.blog_published}} </p>
+        <p> {{blog.blog_title}} </p>
+        <p> {{blog.blog_content|safe}} </p>
 
         <br><br>
         {% endfor %}

@@ -20,7 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'n%pi6fdh$i-^r6l7a&1v)1)9m#p1tfd1guk(ect(y*a*nqua_j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -152,14 +151,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-AWS_ACCESS_KEY_ID = 'AKIAZBSDO3U4SBNTQ763'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'jaygentallan.com'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3-website-us-west-1.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
-AWS_LOCATION = 'main/static'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),

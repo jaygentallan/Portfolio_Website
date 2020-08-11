@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+html,
+body {
+	height: 100%;
+	font-family: "Mulish", sans-serif;
+}
+
+.introContainer {
+	width: 100%;
+}
+
+.introParallax {
+	min-height: 50vh;
+	height: 50vh;
+	background: transparent;
+	background-size: cover;
+	background-attachment: fixed;
+	object-fit: cover;
+}
+
+.titleContainer {
+	z-index: 1 !important;
+	position: relative;
+	top: 12vh;
+	height: 100vh !important;
+	width: 100%;
+	text-align: center;
+}
+
+.nameTitle {
+	font-size: 6vw;
+	padding-right: 1vw;
+	text-shadow: 1px 1px 4px #4a4c4e;
+	color: white;
+}
+
+.subTitle {
+	font-size: 1.6vw;
+	padding-right: 1vw;
+	text-shadow: 1px 1px 3px #2a2c2e;
+	color: white;
+}
+
+.aboutMeContainer {
+	height: 27.5vw;
+	min-height: 300px;
+	background-color: #f5f5f5;
+	text-align: center;
+	min-width: calc(5vw + 90px);
+}
+
+.heightEqualizer {
+	position: relative;
+	top: 3.5vw;
+	height: 75%;
+	display: flex;
+	justify-content: center;
+}
+
+.circular--landscape.jay {
+	position: relative;
+	display: inline-block;
+	top: 1.25vw;
+	left: 2vw;
+	font-size: 75px;
+	width: calc(11vw + 30px);
+	object-fit: cover;
+	object-position: 30% 70%;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 0px 5px 6px #d6d6d6 !important;
+}
+
+.aboutMeTextContainer {
+	position: relative;
+	top: -0.1vw;
+	height: 85%;
+	width: 55vw;
+	min-width: calc(5vw + 100px);
+	margin-left: 2vw;
+	display: inline-block;
+	text-align: left;
+	color: rgb(50, 50, 50);
+	padding: 25px;
+	border: 1.2px solid rgb(215, 215, 215);
+	background-color: white;
+	border-radius: calc(10vw + 10px);
+	box-shadow: 0px 10px 6px #d6d6d6 !important;
+}
+
+.aboutMeTextContainer2 {
+	position: relative;
+	left: 2.5vw;
+	display: inline-block;
+	height: 100%;
+	width: calc(37.5vw);
+	min-width: 50px;
+}
+
+.handWave {
+	position: relative;
+	left: 30%;
+	display: inline-block;
+	width: calc(2vw + 20px);
+}
+
+.aboutMeText1 {
+	position: relative;
+	top: -10px;
+	left: 27%;
+	display: inline-block;
+	font-size: calc(2vw + 5px);
+	text-align: center;
+}
+
+.aboutMeText2 {
+	position: relative;
+	top: 1vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: calc(0.6vw + 10px);
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.aboutMeText3 {
+	position: relative;
+	top: 2vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: calc(0.6vw + 10px);
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.aboutMeText4 {
+	position: relative;
+	top: 3vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: calc(0.6vw + 10px);
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.funFactTextContainer {
+	position: relative;
+	top: 0vw;
+	height: 48%;
+	width: 27.5vw;
+	min-width: calc(5vw + 100px);
+	margin-left: 2vw;
+	margin-bottom: 1vw;
+	text-align: left;
+	color: rgb(50, 50, 50);
+	border: 1.2px solid rgb(215, 215, 215);
+	background-color: white;
+	border-radius: calc(5vw + 10px);
+	box-shadow: 0px 10px 6px #d6d6d6 !important;
+	text-align: center;
+	display: flex;
+}
+
+.funFactText {
+	position: relative;
+	top: 1.5vw;
+	width: 50%;
+	font-size: calc(0.7vw + 5px);
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: justify;
+	display: inline-block;
+}
+
+.imgCircleBackground {
+	position: relative;
+	top: 1.25vw;
+	left: 1.25vw;
+	height: 7.5vw;
+	width: 7.5vw;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #f5f5f5;
+}
+
+.roblox {
+	position: relative;
+	top: 1.3vw;
+	width: 6vw;
+}
+
+.guitar {
+	position: relative;
+	top: 1.3vw;
+	width: 5vw;
+}
+
+.educationContainer {
+	width: 100%;
+}
+
+.educationParallax {
+	min-height: 50vh;
+	height: 50vh;
+	background: transparent;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.educationTextContainer {
+	z-index: 1 !important;
+	position: relative;
+	top: 16vh;
+	height: 100vh !important;
+	width: 100%;
+	text-align: center;
+}
+
+.educationText {
+	font-size: 6vw;
+	padding-right: 1vw;
+	text-shadow: 1px 1px 4px #4a4c4e;
+	color: white;
+}
+
+.educationInfoContainer {
+	height: 27.5vw;
+	min-height: 300px;
+	background-color: #f5f5f5;
+	text-align: center;
+	min-width: calc(5vw + 90px);
+}
+
+.circular--landscape.eastbay {
+	position: relative;
+	display: inline-block;
+	top: 1.25vw;
+	left: 2vw;
+	font-size: 75px;
+	width: calc(11vw + 30px);
+	object-fit: cover;
+	object-position: 30% 70%;
+	border-radius: 50%;
+	display: inline-block;
+	box-shadow: 0px 5px 6px #d6d6d6 !important;
+}
+
+.educationInfoTextContainer {
+	position: relative;
+	top: -0.1vw;
+	height: 85%;
+	width: 55vw;
+	min-width: calc(5vw + 100px);
+	margin-left: 2vw;
+	display: inline-block;
+	text-align: left;
+	color: rgb(50, 50, 50);
+	padding: 25px;
+	border: 1.2px solid rgb(215, 215, 215);
+	background-color: white;
+	border-radius: calc(10vw + 10px);
+	box-shadow: 0px 10px 6px #d6d6d6 !important;
+}
+
+.educationInfoTextContainer2 {
+	position: relative;
+	left: 2.5vw;
+	display: inline-block;
+	height: 100%;
+	width: calc(37.5vw);
+	min-width: 50px;
+}
+
+.educationInfoText1 {
+	position: relative;
+	padding-left: 3vw;
+	display: inline-block;
+	font-size: calc(1.5vw + 5px);
+	text-align: center;
+}
+
+.educationInfoText2 {
+	position: relative;
+	top: -0.4vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: calc(0.6vw + 10px);
+	font-style: italic;
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+	color: rgb(95, 149, 194);
+}
+
+.educationInfoText3 {
+	position: relative;
+	top: -0.7vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: calc(0.6vw + 10px);
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.educationInfoText4 {
+	position: relative;
+	top: 1vw;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: calc(0.6vw + 10px);
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.educationInfoText5 {
+	position: relative;
+	top: 1vw;
+	padding-left: 3vw;
+	font-size: calc(0.6vw + 10px);
+	line-height: 1.75vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.extracurrTextContainer {
+	position: relative;
+	top: 25%;
+	height: 48%;
+	width: 27.5vw;
+	min-width: calc(5vw + 100px);
+	margin-left: 2vw;
+	margin-bottom: 1vw;
+	text-align: left;
+	color: rgb(50, 50, 50);
+	border: 1.2px solid rgb(215, 215, 215);
+	background-color: white;
+	border-radius: calc(5vw + 10px);
+	box-shadow: 0px 10px 6px #d6d6d6 !important;
+	text-align: center;
+	display: flex;
+}
+
+.extracurrText {
+	position: relative;
+	top: 1.5vw;
+	width: 50%;
+	font-size: calc(0.7vw + 5px);
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: justify;
+	display: inline-block;
+}
+
+.IEEEImage {
+	top: 1.3vw;
+	width: 6.5vw;
+	padding: 0.5vw;
+}
+
+.projectsContainer {
+	width: 100%;
+}
+
+.projectsParallax {
+	min-height: 50vh;
+	height: 50vh;
+	background: transparent;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.projectsTextContainer {
+	z-index: 1 !important;
+	position: relative;
+	top: 16vh;
+	height: 100vh !important;
+	width: 100%;
+	text-align: center;
+}
+
+.projectsText {
+	font-size: 6vw;
+	padding-right: 1vw;
+	text-shadow: 1px 1px 4px #4a4c4e;
+	color: white;
+}
+
+.projectsAllContainer {
+	height: 27.5vw;
+	min-height: 300px;
+	background-color: #f5f5f5;
+	text-align: center;
+	min-width: calc(5vw + 90px);
+}
+
+.projectsInfoContainer {
+	position: relative;
+	top: -1vw;
+	height: 48%;
+	width: 30vw;
+	min-width: calc(5vw + 100px);
+	margin-left: 2vw;
+	margin-bottom: 2vw;
+	text-align: left;
+	color: rgb(50, 50, 50);
+	border: 1.2px solid rgb(215, 215, 215);
+	background-color: white;
+	border-radius: calc(5vw + 10px);
+	box-shadow: 0px 10px 6px #d6d6d6 !important;
+	text-align: center;
+	display: flex;
+}
+
+.projectsFirstContainer {
+	margin-right: 1vw;
+}
+
+.projectsSecondContainer {
+	margin-left: 1vw;
+}
+
+.projectTitle {
+	position: relative;
+	top: 0.5vw;
+	padding-left: 1vw;
+	font-size: calc(1vw + 5px);
+	text-align: left;
+}
+
+.projectSubtitle {
+	position: relative;
+	top: 0.3vw;
+	padding-left: 1vw;
+	text-align: left;
+	font-size: calc(0.7vw + 5px);
+	font-style: italic;
+	color: rgb(95, 149, 194);
+}
+
+.projectText {
+	position: relative;
+	top: 1vw;
+	font-size: calc(0.7vw + 5px);
+	margin-bottom: 10px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-align: justify;
+	display: inline-block;
+}
+
+.projectBottomContainer {
+	z-index: 1;
+	position: relative;
+	top: 1vw;
+	text-align: left;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.projectIcon {
+	position: relative;
+	top: 1.3vw;
+	padding-left: 1vw;
+	height: 7.5vw;
+	width: 7.5vw;
+}
+
+.githubLink {
+	height: 1.8vw;
+	width: 1.8vw;
+}
+
+.githubIcon {
+	z-index: 100;
+	height: calc(1.75vw + 2px);
+	width: calc(1.75vw + 2px);
+}
+
+.algointeractLink {
+	position: relative;
+	top: -0.5vw;
+	left: 0.75vw;
+	text-decoration: none;
+	font-size: calc(0.7vw + 5px);
+	color: rgb(50, 50, 50);
+}
+
+.algointeractLink:hover {
+	color: rgb(95, 149, 194);
+}
+
+.skillsContainer {
+	width: 100%;
+}
+
+.skillsParallax {
+	min-height: 50vh;
+	height: 50vh;
+	background: transparent;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.skillsTextContainer {
+	z-index: 1 !important;
+	position: relative;
+	top: 16vh;
+	width: 100%;
+	text-align: center;
+}
+
+.skillsText {
+	font-size: 6vw;
+	padding-right: 1vw;
+	text-shadow: 1px 1px 4px #4a4c4e;
+	color: white;
+}
+
+.skillsInfoContainer {
+	height: 27.5vw;
+	min-height: 300px;
+	width: 100%;
+	background-color: #f5f5f5;
+	text-align: center;
+	min-width: calc(5vw + 90px);
+	display: inline-block;
+}
+
+.skillContainer {
+	position: relative;
+	display: inline-block;
+	height: 6vw;
+	width: 6vw;
+	text-align: center;
+	margin-top: 0.5vw;
+}
+
+.circular--landscape.skill {
+	position: relative;
+	font-size: 75px;
+	height: calc(3vw + 15px);
+	width: calc(3vw + 15px);
+	object-fit: contain;
+	object-position: 30% 70%;
+	background-color: transparent !important;
+}
+
+.skillText {
+	position: relative;
+	top: 0vw;
+	font-size: calc(0.75vw + 3px);
+}
+
+.skillsInfoTextContainer {
+	position: relative;
+	top: -0.1vw;
+	height: 85%;
+	width: 26vw;
+	min-width: calc(5vw + 100px);
+	margin-left: 1vw;
+	margin-right: 1vw;
+	display: inline-block;
+	text-align: left;
+	color: rgb(50, 50, 50);
+	padding: 25px;
+	border: 1.2px solid rgb(215, 215, 215);
+	background-color: white;
+	border-radius: calc(10vw + 10px);
+	box-shadow: 0px 10px 6px #d6d6d6 !important;
+}
+
+.skillTitle {
+	font-size: 2vw;
+	text-align: center;
+}
+
+.allSkillsContainer {
+	height: 14vw;
+	padding: 1vw;
+}

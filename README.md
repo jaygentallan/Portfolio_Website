@@ -1,1 +1,1 @@
-A Portfolio Website created using React. Can be visited at: jaygentallan.com
+A Portfolio Website created using React. Visit the website at: jaygentallan.me
